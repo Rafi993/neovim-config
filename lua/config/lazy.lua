@@ -35,6 +35,7 @@ require('lazy').setup({
   require 'config.plugins.treesitter',
   require 'config.plugins.neotree',
   'github/copilot.vim',
+  require 'config.plugins.harpoon',
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {},
