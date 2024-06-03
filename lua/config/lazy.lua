@@ -25,7 +25,7 @@ require('lazy').setup({
   require 'config.plugins.which_keys',
   require 'config.plugins.telescope',
   require 'config.plugins.lsp',
-  { 'Pocco81/auto-save.nvim' },
+  require 'config.plugins.autosave',
   require 'config.plugins.autoformat',
   require 'config.plugins.autocomplete',
   require 'config.plugins.theme',
