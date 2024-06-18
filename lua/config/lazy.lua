@@ -34,7 +34,6 @@ require('lazy').setup({
   require 'config.plugins.lazygit',
   require 'config.plugins.treesitter',
   require 'config.plugins.neotree',
-  'github/copilot.vim',
   require 'config.plugins.copilotchat',
   require 'config.plugins.harpoon',
 }, {
