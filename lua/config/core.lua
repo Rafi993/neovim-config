@@ -48,5 +48,5 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 
 -- Spell check
-vim.opt.spelllang = 'en_us'
-vim.opt.spell = true
+-- vim.opt.spelllang = 'en_us'
+-- vim.opt.spell = true
