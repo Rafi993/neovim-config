@@ -1,13 +1,14 @@
 -- since this is just an example spec, don't actually load anything here and return an empty spec
 -- stylua: ignore
 if true then return {
- {
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "retrobox",
+      colorscheme = "catppuccin",
     },
-  },
-  {
+   },
+   {
     "nvim-neo-tree/neo-tree.nvim",
       opts = {
         filesystem = {
@@ -18,7 +19,18 @@ if true then return {
          }
         }
       }
-  }
+    },
+   {
+    "luckasRanarison/tailwind-tools.nvim",
+    name = "tailwind-tools",
+    build = ":UpdateRemotePlugins",
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+      "nvim-telescope/telescope.nvim",
+      "neovim/nvim-lspconfig",
+    },
+    opts = {}
+   }
 } end
 
 -- every spec file under the "plugins" directory will be loaded automatically by lazy.nvim
